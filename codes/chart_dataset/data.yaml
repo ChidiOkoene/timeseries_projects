@@ -1,0 +1,20 @@
+path: .
+train: images_with_boxes
+val: images_with_boxes  # or split off a subset for validation
+test: images_with_boxes # optional
+
+# number of classes
+nc: 10
+
+# class names in order of their IDs
+names:
+  0: sma_ema_cross
+  1: rsi_overbought
+  2: rsi_oversold
+  3: macd_bullish
+  4: macd_bearish
+  5: bb_breakout
+  6: stoch_cross
+  7: adx_strong
+  8: ichimoku_cross
+  9: fib_test

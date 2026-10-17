@@ -1,0 +1,64 @@
+# --- runtime / env ---
+.env
+.env.*
+!.env.example
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+*.egg-info/
+dist/
+build/
+.ipynb_checkpoints/
+
+# --- local data & artifacts (keep on disk; do not publish) ---
+data/**
+!data/README.md
+artifacts/**
+!artifacts/.gitkeep
+outputs/**
+!outputs/.gitkeep
+
+# chart / vision binaries and caches
+**/chart_images/
+**/images_with_boxes/
+**/sr_charts/
+**/sr_charts_withTrendLines/
+**/image_gen-train/
+**/chart_yolo/
+**/*.png
+**/*.jpg
+**/*.jpeg
+**/*.h5
+**/*.keras
+**/*.pt
+**/*.cache
+**/*.pkl
+**/*.weights.h5
+
+# allow tiny tracked demo assets
+!examples/**
+!examples/**/*.png
+!examples/**/*.csv
+
+# YOLO / ultralytics runs under codes
+codes/chart_dataset/
+codes/yolov8n.pt
+codes/**/*.pt
+codes/**/*.csv
+codes/**/*.pkl
+codes/**/*.yaml
+
+# --- optimal-brain (personal) ---
+.agent/context/knowledge-vault.md
+.agent/context/project-context.md
+.scratch/
+
+# editor / OS
+.DS_Store
+Thumbs.db
+*.swp

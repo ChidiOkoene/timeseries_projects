@@ -1,3 +1,0 @@
-golden_cross
-rsi_overbought
-macd_bullish
